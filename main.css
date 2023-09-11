@@ -1,26 +1,109 @@
-/* styles.css */
-header {
-    background-color: #333;
-    color: #fff;
+header,
+section h2{
+    font-family: 'Bungee', cursive;
 }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+body{
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    padding: 16px 0;
+    
+    color: #ecf0f1;
 }
 
-nav ul li {
+header h1,
+section h2{
+    font-weight: normal;
+}
+
+header .container,
+section .container,
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.container{
+    max-width: 1288px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header nav li{
     display: inline;
-    margin-right: 20px;
+    margin-left: 16px 0;
+    margin-right: 25px;
+    font-size: 18px;
 }
 
-nav ul li a {
+header nav li a{
+    color: #ecf0f1;
     text-decoration: none;
-    color: #fff;
-    font-weight: bold;
 }
 
-nav ul li a:hover {
-    text-decoration: under;
+header h1 {
+    margin: 0 100px;
+    font-size: 30px;
 }
+
+.brands-list img{
+    height: 24px;
+}
+
+.brands-list li{
+    display: inline;
+    margin-right: 8px;
+}
+
+section .container{
+    align-items: flex-start;
+}
+
+section {
+    padding: 24px 0;
+}
+
+section h2{
+    margin-bottom: 16px;
+}
+
+section {
+    color: #d7addd;
+}
+
+section p{
+    margin-bottom: 8px;
+}
+
+
+
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/pexels-oscar-millán-14018448.jpg'); 
+    background-size: cover;
+    background-position: center;
+    z-index: -1; 
+}
+
+header,
+section {
+    
+    padding: 24px;
+    border-radius: 8px;
+    margin: 16px auto;
+    max-width: 800px;
+    
+}
+
+
+
+
+
+
