@@ -12,12 +12,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="container">
+        <div class="background-image"></div>
+    </div>
+    
     <header>
-        <div class="background-image">
+        
 
         <div class="container">
             <h1>Reinos do WhatsApp</h1>
-
         </div>
         <nav>
             <ul>
@@ -31,22 +34,38 @@
                 <li><a href="#">Perfil</a></li>
             </ul>
         </nav>
+        
     </header>
     <section>
-        <div>
+        <div class="container">
             <h2>Descrição</h2>
             <p>
                 Reinos de WhatsApp é um jogo de RPG de texto baseado em WhatsApp, onde os jogadores assumem o papel de personagens em um mundo de fantasia épico. Eles podem explorar reinos mágicos, completar missões, travar batalhas e interagir com outros jogadores, tudo dentro do aplicativo WhatsApp.
             </p>
-    </section>
-    <section>
-        <div>
-            <h2>Personagens</h2>
-            <p>
-                Os jogadores podem criar seu próprio personagem, escolhendo raças, classes e habilidades especiais. Cada escolha afeta a história e as habilidades do personagem.
-            </p>
         </div>
-    </div>
+    </section>
+    <section class="characters">
+        <div class="container">
+            <h2>Personagens</h2>
+            <ul class="character-list">
+                <li class="character">
+                    <img src="./images/Legolas_LoranDeSore.webp" alt="Personagem Legolas">
+                    <h3>Legolas</h3>
+                    <p>Raça: Elfo</p>
+                    <p>Classe: Arqueiro</p>
+                    <button class="edit-button">Editar</button>
+                </li>
+                <li class="character">
+                    <img src="./images/78b82dad4a8484e8e8eddef281ee6d82.gif" alt="Personagem 2">
+                    <h3>Merlin</h3>
+                    <p>Raça: Humano</p>
+                    <p>Classe: Mago</p>
+                    <button class="edit-button">Editar</button>
+                </li>
+                <!-- Adicione mais personagens conforme necessário -->
+            </ul>
+            <button class="create-character-button">Criar Novo Personagem</button>
+        </div>
     </section>
 
     <!-- Conteúdo da Página Aqui -->
