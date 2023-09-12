@@ -10,8 +10,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome-free-5.15.4-web/js/all.min.js">
 </head>
 <body>
+   
     <div class="container">
         <div class="background-image"></div>
     </div>
@@ -40,13 +45,15 @@
         <div class="container">
             <h2>Descrição</h2>
             <p>
-                Reinos de WhatsApp é um jogo de RPG de texto baseado em WhatsApp, onde os jogadores assumem o papel de personagens em um mundo de fantasia épico. Eles podem explorar reinos mágicos, completar missões, travar batalhas e interagir com outros jogadores, tudo dentro do aplicativo WhatsApp.
+                Bem-vindo aos Reinos de WhatsApp, onde aventuras épicas ganham vida através das palavras. Em nosso site de RPG de texto, você assumirá o papel de personagens lendários em mundos de fantasia deslumbrantes. Aqui, a magia e a imaginação se entrelaçam enquanto você explora reinos mágicos, embarca em missões perigosas e enfrenta desafios épicos. Tudo isso acontece em tempo real e diretamente dentro do aplicativo WhatsApp, tornando cada interação mais imersiva do que nunca.
             </p>
         </div>
     </section>
     <section class="characters">
         <div class="container">
+            <a class="arrow prev" href="#" onclick="previousCharacter()">&#10094;</a>
             <h2>Personagens</h2>
+            <p>Bem-vindo à seção de personagens! Aqui, você pode explorar os heróis e heroínas dos nossos mundos de fantasia. Cada personagem possui sua própria história, raça e classe, e está pronto para embarcar em aventuras épicas.</p>
             <ul class="character-list">
                 <li class="character">
                     <img src="./images/Legolas_LoranDeSore.webp" alt="Personagem Legolas">
@@ -62,16 +69,32 @@
                     <p>Classe: Mago</p>
                     <button class="edit-button">Editar</button>
                 </li>
-                <!-- Adicione mais personagens conforme necessário -->
+                <li class="character">
+                    <img src="./images/139964347_233841871568948_546897853677895685_n.jpg" alt="Loki">
+                    <h3>Loki</h3>
+                    <p>Raça: Aesir</p>
+                    <p>Classe: Trapaceiro</p>
+                    <button class="edit-button">Editar</button>
+                </li>
+                <li class="character">
+                    <img src="./images/hades.jpg" alt="Hades">
+                    <h3>Hades</h3>
+                    <p>Raça: Deus Grego</p>
+                    <p>Classe: Senhor do Submundo</p>
+                    <button class="edit-button">Editar</button>
+                </li>
+                <li class="character">
+                    <img src="./images/shaitan.jpg" alt="Shait'an">
+                    <h3>Shait'an</h3>
+                    <p>Raça: Demônio</p>
+                    <p>Classe: Mestre das Trevas</p>
+                    <button class="edit-button">Editar</button>
+                </li>
+                
             </ul>
+            <a class="arrow next" href="#" onclick="nextCharacter()">&#10095;</a>
             <button class="create-character-button">Criar Novo Personagem</button>
         </div>
     </section>
-
-    <!-- Conteúdo da Página Aqui -->
-
-    <footer>
-        <p>&copy; 2023 Reinos de WhatsApp</p>
-    </footer>
-</body>
-</html>
+   
+                    
