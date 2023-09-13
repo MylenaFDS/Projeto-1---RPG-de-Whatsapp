@@ -4,7 +4,7 @@ section h2{
 }
 
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Uncial Antiqua', cursive;
 }
 header{
     padding: 16px 0;
@@ -15,6 +15,7 @@ header{
 header h1,
 section h2{
     font-weight: bold;
+    color:#d62148c5
 }
 
 header .container,
@@ -35,7 +36,7 @@ section .container,
 header nav li{
     display: inline;
     margin-left: 16px 0;
-    margin-right: 25px;
+    margin-right: 18px;
     font-size: 18px;
 }
 
@@ -53,12 +54,9 @@ header h1 {
     margin: 0;
     font-size: 30px;
     padding: 16px 0;
-    font-family: 'Bungee', cursive;
+    font-family: 'Uncial Antiqua', cursive;
     color: #800000;
 }
-
-
-
 
 section .container{
     align-items: flex-start;
@@ -75,6 +73,7 @@ section h2{
 section {
     color: #ffd900a2;
 }
+
 
 section p{
     margin-bottom: 8px;
@@ -150,7 +149,7 @@ nav li a:hover {
     border: 1px solid #ddd;
     padding: 10px;
     border-radius: 5px;
-    width: calc(25% - 20px);
+    width: calc(25% - 20px); /* Define a largura de cada item */
     text-align: center;
 }
 
@@ -161,18 +160,84 @@ nav li a:hover {
 }
 
 /* Estilos para os botões de edição e criação de personagem */
-.edit-button,
-.create-character-button {
-    background-color: #007bff;
+.see-button,.buy-button {
+    background-color: #194619a2;
     color: #fff;
     border: none;
-    padding: 10px 20px;
+    padding: 10px;
     border-radius: 5px;
     cursor: pointer;
     margin-top: 10px;
+    font-family: 'Uncial Antiqua',cursive;
 }
 
-.edit-button:hover,
-.create-character-button:hover {
-    background-color: #0056b3;
+.see-button:hover {
+    background-color: #ff00eaa2;
 }
+
+.character-flex-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Distribuir os itens igualmente */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.section li a{
+    text-decoration: none;
+}
+
+/* Estilos para o link na seção Missões */
+.missions a {
+    color: #ff00eaa2; /* Cor do link */
+    text-decoration: none; /* Remove o sublinhado */
+    font-family: 'Uncial Antiqua', cursive; /* Fonte */
+    font-weight: bold; /* Peso da fonte */
+}
+
+.characters a {
+    color: #ff00eaa2; /* Cor do link */
+    text-decoration: none; /* Remove o sublinhado */
+    font-family: 'Uncial Antiqua', cursive; /* Fonte */
+    font-weight: bold; /* Peso da fonte */
+}
+
+.store img {
+    max-width: 100%;
+    height: 50%;
+    border-radius: 50%;
+}
+
+.store a {
+    color: #ff00eaa2; /* Cor do link */
+    text-decoration: none; /* Remove o sublinhado */
+    font-family: 'Uncial Antiqua', cursive; /* Fonte */
+    font-weight: bold; /* Peso da fonte */
+}
+
+.guilds a {
+    color: #ff00eaa2; /* Cor do link */
+    text-decoration: none; /* Remove o sublinhado */
+    font-family: 'Uncial Antiqua', cursive; /* Fonte */
+    font-weight: bold; /* Peso da fonte */
+}
+
+
+/* Estilos para alinhar os campos à esquerda */
+.comments .form-group {
+    text-align: left;
+    color: violet;
+}
+
+.comments label {
+    display: block;
+    margin-bottom: 6px;
+    
+}
+
+.comments input[type="text"],
+.comments textarea {
+    width: 100%;
+}
+
