@@ -146,7 +146,7 @@ nav li a:hover {
     text-align: center;
 }
 
-.character img {
+.characters img {
     max-width: 100%;
     height: auto;
     border-radius: 50%;
@@ -335,3 +335,11 @@ nav li a:hover {
     height: 150px;
 }
 
+.character-list img{
+    
+        width: 150px; /* Defina a largura desejada */
+        height: 150px; /* Defina a altura desejada */
+        /* Adicione outras propriedades CSS, se necessário */
+    
+    
+}
