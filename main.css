@@ -424,3 +424,25 @@ nav li a:hover {
     font-family: 'Uncial Antiqua', cursive; /* Fonte */
     font-weight: bold; /* Peso da fonte */
 }
+
+
+.mission-details:hover{
+    background-color: #ffd900a2; /* Defina a cor desejada */
+    color: #800000; /* Cor do texto (opcional, ajuste de acordo com suas necessidades) */
+    cursor: pointer;
+}
+
+.mission-details img{
+
+    width: 500px; /* Defina a largura desejada */
+    height: 500px;
+
+}
+
+.mission-details a {
+    color: #ff00eaa2; /* Cor do link */
+    text-decoration: none; /* Remove o sublinhado */
+    font-family: 'Uncial Antiqua', cursive; /* Fonte */
+    font-weight: bold; /* Peso da fonte */
+}
+

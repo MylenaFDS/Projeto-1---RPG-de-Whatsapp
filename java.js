@@ -46,3 +46,26 @@ function redirecionarParaPaginaMulherMaravilha() {
     window.location.href = "pagina_mulher_maravilha.html";
 }
 
+function redirecionarParaPaginaMissão1() {
+    window.location.href = "missao1.html";
+}
+
+function redirecionarParaPaginaMissão2() {
+    window.location.href = "missao2.html";
+}
+
+function redirecionarParaPaginaMissão3() {
+    window.location.href = "missao3.html";
+}
+
+function redirecionarParaPaginaMissão4() {
+    window.location.href = "missao4.html";
+}
+
+function redirecionarParaPaginaMissão5() {
+    window.location.href = "missao5.html";
+}
+
+function redirecionarParaPaginaMissão6() {
+    window.location.href = "missao6.html";
+}
