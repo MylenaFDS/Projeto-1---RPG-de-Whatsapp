@@ -404,3 +404,16 @@ nav li a:hover {
     color: #800000; /* Cor do texto (opcional, ajuste de acordo com suas necessidades) */
     cursor: pointer;
 }
+
+.character-page:hover{
+    background-color: #ffd900a2; /* Defina a cor desejada */
+    color: #800000; /* Cor do texto (opcional, ajuste de acordo com suas necessidades) */
+    cursor: pointer;
+}
+
+.character-page img{
+
+    width: 500px; /* Defina a largura desejada */
+    height: 500px;
+
+}
