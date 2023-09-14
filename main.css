@@ -152,8 +152,8 @@ nav li a:hover {
     border-radius: 50%;
 }
 
-/* Estilos para os botões de edição e criação de personagem */
-.see-button,.buy-button {
+
+.see-button,.buy-button,.send-comment,.enter,.create-an-account,.reset-password {
     background-color: #194619a2;
     color: #fff;
     border: none;
@@ -168,6 +168,25 @@ nav li a:hover {
     background-color: #ff00eaa2;
 }
 
+.buy-button:hover {
+    background-color: #ff00eaa2;
+}
+
+.send-comment:hover {
+    background-color: #ff00eaa2;
+}
+
+.enter:hover {
+    background-color: #ff00eaa2;
+}
+
+.create-an-account:hover {
+    background-color: #ff00eaa2;
+}
+
+.reset-password:hover {
+    background-color: #ff00eaa2;
+}
 .character-flex-list {
     display: flex;
     flex-wrap: wrap;
@@ -342,4 +361,46 @@ nav li a:hover {
         /* Adicione outras propriedades CSS, se necessário */
     
     
+}
+
+.guilds:hover a{
+
+    color: #800000; /* Cor do texto (opcional, ajuste de acordo com suas necessidades) */
+    cursor: pointer;
+}
+
+.registration a {
+    color: #ff00eaa2; /* Cor do link */
+    text-decoration: none; /* Remove o sublinhado */
+    font-family: 'Uncial Antiqua', cursive; /* Fonte */
+    font-weight: bold; /* Peso da fonte */
+}
+.registration:hover a{
+
+    color: #800000; /* Cor do texto (opcional, ajuste de acordo com suas necessidades) */
+    cursor: pointer;
+}
+
+.registration:hover {
+    background-color: #ffd900a2; /* Defina a cor desejada */
+    color: #800000; /* Cor do texto (opcional, ajuste de acordo com suas necessidades) */
+    cursor: pointer;
+}
+
+.password-reset a {
+    color: #ff00eaa2; /* Cor do link */
+    text-decoration: none; /* Remove o sublinhado */
+    font-family: 'Uncial Antiqua', cursive; /* Fonte */
+    font-weight: bold; /* Peso da fonte */
+}
+.password-reset:hover a{
+
+    color: #800000; /* Cor do texto (opcional, ajuste de acordo com suas necessidades) */
+    cursor: pointer;
+}
+
+.password-reset:hover {
+    background-color: #ffd900a2; /* Defina a cor desejada */
+    color: #800000; /* Cor do texto (opcional, ajuste de acordo com suas necessidades) */
+    cursor: pointer;
 }
