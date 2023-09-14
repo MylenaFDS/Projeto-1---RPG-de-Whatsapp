@@ -516,7 +516,7 @@ nav li a:hover {
 }
 
 .product-list:hover{
-    background-color: #ffd900a2; /* Defina a cor desejada */
+    
     color: #800000; /* Cor do texto (opcional, ajuste de acordo com suas necessidades) */
     cursor: pointer;
 }
