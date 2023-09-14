@@ -417,3 +417,10 @@ nav li a:hover {
     height: 500px;
 
 }
+
+.character-page a {
+    color: #ff00eaa2; /* Cor do link */
+    text-decoration: none; /* Remove o sublinhado */
+    font-family: 'Uncial Antiqua', cursive; /* Fonte */
+    font-weight: bold; /* Peso da fonte */
+}
