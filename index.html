@@ -27,7 +27,7 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#">Início</a></li>
+                <li><a href="#index.html">Início</a></li>
                 <li><a href="#description" title="Ir para a seção de Descrição">Descrição</a></li>
                 <li><a href="#characters" title="Ir para a seção de Personagens">Personagens</a></li>
                 <li><a href="#missions" title="Ir para a seção de Missões">Missões</a></li>
@@ -39,7 +39,7 @@
             </ul>
         </nav>
     </header>
-    <section id="description">
+    <section id="description" class="description content-section">
         <div class="container">
             <h2>Descrição</h2>
             <p>
@@ -47,8 +47,8 @@
             </p>
         </div>
     </section>
-    <section class="characters" id="characters">
-        <section class="characters">
+    <section id="characters" class=" characters" >
+        
             <div class="container">
                 
                 <h2>Personagens</h2>
@@ -154,11 +154,11 @@
                     Queremos ouvir sua opinião! Deixe seu comentário abaixo sobre sua experiência nos Reinos de WhatsApp. Compartilhe suas aventuras, sugestões e feedback conosco.
                 </p>
                 <form action="processar_comentario.php" method="post" style="text-align: left";>
-                    <p><label for="nome" style="color: violet;">Nome:</label>
-                    <input type="text" id="nome" name="nome" required>
+                    <p><label for="nome" >Nome:</label>
+                    <input type="text" id="nome" name="nome" required placeholder="Seu nome">
                     </p>
-                    <label for="comentario" style="color: violet;">Comentário:</label>
-                    <textarea id="comentario" name="comentario" rows="4" required></textarea>
+                    <label for="comentario">Comentário:</label>
+                    <textarea id="comentario" name="comentario" rows="4" required placeholder="Comentário"></textarea>
                     
                     <button type="submit" style="color: #194619a2;">Enviar Comentário</button>
                 </form>
@@ -168,20 +168,20 @@
             <div class="container">
                 <h2>Perfil</h2>
                 <p>
-                    Faça login para acessar seu perfil nos Reinos de WhatsApp. Se você ainda não possui uma conta, pode se cadastrar através do link abaixo.
+                    Faça login para acessar seu perfil em Reinos do WhatsApp. Se você ainda não possui uma conta, pode se cadastrar através do link abaixo.
                 </p>
                 <form action="processar_login.php" method="post" style="text-align: left";>
                     <div class="form-group">
-                        <label for="login" style="color: violet;">Login:</label>
-                        <input type="text" id="login" name="login" required>
+                        <label for="login">Login:</label>
+                        <input type="text" id="login" name="login" required placeholder="Login">
                     </div>
                     <div class="form-group">
-                        <label for="senha" style="color: violet;">Senha:</label>
-                        <input type="password" id="senha" name="senha" required>
+                        <label for="senha";>Senha:</label>
+                        <input type="password" id="senha" name="senha" required placeholder="Senha">
                     </div>
                     <button type="submit" style="color: #194619a2;">Entrar</button>
                 </form>
-                <p  style="text-align: left">Não possui conta? <a href="cadastro.html">Cadastre-se!</a></p>
+                <p  style="text-align: left;">Não possui conta? <a href="cadastro.html">Cadastre-se!</a></p>
             </div>
         </section>
         

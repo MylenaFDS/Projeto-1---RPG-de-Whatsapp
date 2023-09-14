@@ -18,14 +18,7 @@ section h2{
     color:#d62148c5
 }
 
-header .container,
-section .container,
-{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 
-}
 
 .container{
     max-width: 1288px;
@@ -223,6 +216,14 @@ nav li a:hover {
     font-weight: bold; /* Peso da fonte */
 }
 
+.battles a {
+    color: #ff00eaa2; /* Cor do link */
+    text-decoration: none; /* Remove o sublinhado */
+    font-family: 'Uncial Antiqua', cursive; /* Fonte */
+    font-weight: bold; /* Peso da fonte */
+}
+
+
 
 /* Estilos para alinhar os campos à esquerda */
 .comments .form-group {
@@ -239,5 +240,98 @@ nav li a:hover {
 .comments input[type="text"],
 .comments textarea {
     width: 100%;
+}
+
+.description:hover {
+    background-color: #ffd900a2; /* Defina a cor desejada */
+    color: #800000; /* Cor do texto (opcional, ajuste de acordo com suas necessidades) */
+    cursor:pointer;
+}
+
+.characters:hover {
+    background-color: #ffd900a2; /* Defina a cor desejada */
+    color: #800000; /* Cor do texto (opcional, ajuste de acordo com suas necessidades) */
+    cursor:pointer;
+}
+
+.missions:hover {
+    background-color: #ffd900a2; /* Defina a cor desejada */
+    color: #800000; /* Cor do texto (opcional, ajuste de acordo com suas necessidades) */
+    cursor: pointer;
+}
+
+.store:hover {
+    background-color: #ffd900a2; /* Defina a cor desejada */
+    color: #800000; /* Cor do texto (opcional, ajuste de acordo com suas necessidades) */
+    cursor: pointer;
+}
+
+.battles:hover {
+    background-color: #ffd900a2; /* Defina a cor desejada */
+    color: #800000; /* Cor do texto (opcional, ajuste de acordo com suas necessidades) */
+    cursor: pointer;
+}
+
+.guilds:hover {
+    background-color: #ffd900a2; /* Defina a cor desejada */
+    color: #800000; /* Cor do texto (opcional, ajuste de acordo com suas necessidades) */
+    cursor: pointer;
+}
+
+.comments:hover {
+    background-color: #ffd900a2; /* Defina a cor desejada */
+    color: #800000; /* Cor do texto (opcional, ajuste de acordo com suas necessidades) */
+    cursor: pointer;
+}
+.profile:hover {
+    background-color: #ffd900a2; /* Defina a cor desejada */
+    color: #800000; /* Cor do texto (opcional, ajuste de acordo com suas necessidades) */
+    cursor: pointer;
+}
+
+.profile a {
+    color: #ff00eaa2; /* Cor do link */
+    text-decoration: none; /* Remove o sublinhado */
+    font-family: 'Uncial Antiqua', cursive; /* Fonte */
+    font-weight: bold; /* Peso da fonte */
+}
+
+.profile:hover a{
+
+    color: #800000; /* Cor do texto (opcional, ajuste de acordo com suas necessidades) */
+    cursor: pointer;
+}
+
+.battles:hover a{
+
+    color: #800000; /* Cor do texto (opcional, ajuste de acordo com suas necessidades) */
+    cursor: pointer;
+}
+
+.characters:hover a{
+
+    color: #800000; /* Cor do texto (opcional, ajuste de acordo com suas necessidades) */
+    cursor: pointer;
+}
+
+.missions:hover a{
+    color: #800000; /* Cor do texto (opcional, ajuste de acordo com suas necessidades) */
+    cursor: pointer;
+}
+
+.store:hover a{
+
+    color: #800000; /* Cor do texto (opcional, ajuste de acordo com suas necessidades) */
+    cursor: pointer;
+}
+
+.guilds:hover a{
+
+    color: #800000; /* Cor do texto (opcional, ajuste de acordo com suas necessidades) */
+    cursor: pointer;
+}
+
+.product-list img{
+    height: 150px;
 }
 
