@@ -514,3 +514,16 @@ nav li a:hover {
     font-family: 'Uncial Antiqua', cursive; /* Fonte */
     font-weight: bold; /* Peso da fonte */
 }
+
+.product-list:hover{
+    background-color: #ffd900a2; /* Defina a cor desejada */
+    color: #800000; /* Cor do texto (opcional, ajuste de acordo com suas necessidades) */
+    cursor: pointer;
+}
+
+.product-list a {
+    color: #ff00eaa2; /* Cor do link */
+    text-decoration: none; /* Remove o sublinhado */
+    font-family: 'Uncial Antiqua', cursive; /* Fonte */
+    font-weight: bold; /* Peso da fonte */
+}
