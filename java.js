@@ -69,3 +69,4 @@ function redirecionarParaPaginaMissão5() {
 function redirecionarParaPaginaMissão6() {
     window.location.href = "missao6.html";
 }
+
