@@ -14,6 +14,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="fontawesome-free-5.15.4-web/js/all.min.js">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
 </head>
 <body>
    
@@ -47,64 +50,66 @@
             </p>
         </div>
     </section>
-    <section id="characters" class=" characters" >
-        
-            <div class="container">
-                
-                <h2>Personagens</h2>
-                <p>Bem-vindo à seção de personagens! Aqui, você pode explorar os heróis e heroínas dos nossos mundos de fantasia. Cada personagem possui sua própria história, raça e classe, e está pronto para embarcar em aventuras épicas.</p>
-                <ul class="character-list">
-                    <li class="character">
-                        <img src="./images/Legolas_LoranDeSore.webp" alt="Personagem Legolas">
-                        <h3>Legolas</h3>
-                        <p>Raça: Elfo</p>
-                        <p>Classe: Arqueiro</p>
-                        <button class="see-button" onclick="redirecionarParaPaginaLegolas()">Ver</button>
-                    </li>
-                    <li class="character">
-                        <img src="./images/78b82dad4a8484e8e8eddef281ee6d82.gif" alt="Personagem 2">
-                        <h3>Merlin</h3>
-                        <p>Raça: Humano</p>
-                        <p>Classe: Mago</p>
-                        <button class="see-button" onclick="redirecionarParaPaginaMerlin()">Ver</button>
-                    </li>
-                    <li class="character">
-                        <img src="./images/139964347_233841871568948_546897853677895685_n.jpg" alt="Loki">
-                        <h3>Loki</h3>
-                        <p>Raça: Aesir</p>
-                        <p>Classe: Trapaceiro</p>
-                        <button class="see-button" onclick="redirecionarParaPaginaLoki()">Ver</button>
-                    </li>
-                    <li class="character">
-                        <img src="./images/hades.jpg" alt="Hades">
-                        <h3>Hades</h3>
-                        <p>Raça: Deus Grego</p>
-                        <p>Classe: Senhor do Submundo</p>
-                        <button class="see-button" onclick="redirecionarParaPaginaHades()">Ver</button>
-                    </li>
-                </ul>
-                
-                <script>
-                    function redirecionarParaPaginaLegolas() {
-                    window.location.href = "pagina_legolas.html";
-                }
-        
-                function redirecionarParaPaginaMerlin() {
-                    window.location.href = "pagina_merlin.html";
-                }
-        
-                function redirecionarParaPaginaLoki() {
-            window.location.href = "pagina_loki.html";
-        }
-        
-        function redirecionarParaPaginaHades() {
-            window.location.href = "pagina_hades.html";
-        }
-                </script>
+    <section id="characters" class="characters">
+        <div class="container">
+            <h2>Personagens</h2>
+            <p>Bem-vindo à seção de personagens! Aqui, você pode explorar os heróis e heroínas dos nossos mundos de fantasia. Cada personagem possui sua própria história, raça e classe, e está pronto para embarcar em aventuras épicas.</p>
 
-                <a href="lista_de_personagens.html">Clique aqui para acessar a lista completa de personagens</a>
+            <div class="character-carousel">
+                <div class="character">
+                    <img src="./images/Legolas_LoranDeSore.webp" alt="Personagem Legolas">
+                    <h3>Legolas</h3>
+                    <p>Raça: Elfo</p>
+                    <p>Classe: Arqueiro</p>
+                    <button class="see-button" onclick="redirecionarParaPagina('pagina_legolas.html')">Ver</button>
+                </div>
+                <div class="character">
+                    <img src="./images/78b82dad4a8484e8e8eddef281ee6d82.gif" alt="Personagem 2">
+                    <h3>Merlin</h3>
+                    <p>Raça: Humano</p>
+                    <p>Classe: Mago</p>
+                    <button class="see-button" onclick="redirecionarParaPagina('pagina_merlin.html')">Ver</button>
+                </div>
+                <div class="character">
+                    <img src="./images/139964347_233841871568948_546897853677895685_n.jpg" alt="Loki">
+                    <h3>Loki</h3>
+                    <p>Raça: Aesir</p>
+                    <p>Classe: Trapaceiro</p>
+                    <button class="see-button" onclick="redirecionarParaPagina('pagina_loki.html')">Ver</button>
+                </div>
+                <div class="character">
+                    <img src="./images/hades.jpg" alt="Hades">
+                    <h3>Hades</h3>
+                    <p>Raça: Deus Grego</p>
+                    <p>Classe: Senhor do Submundo</p>
+                    <button class="see-button" onclick="redirecionarParaPagina('pagina_hades.html')">Ver</button>
+                </div>
             </div>
-        </section>
+
+            <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+            <script>
+                $(document).ready(function(){
+                    $('.character-carousel').slick({
+                        dots: true,
+                        infinite: true,
+                        speed: 300,
+                        slidesToShow: 1,
+                        adaptiveHeight: true,
+                        autoplay: true, /* Adiciona autoplay */
+                        autoplaySpeed: 3000 /* Define a velocidade do autoplay em milissegundos */
+                    });
+                });
+
+                function redirecionarParaPagina(pagina) {
+                    window.location.href = pagina;
+                }
+            </script>
+
+            <a href="lista_de_personagens.html">Clique aqui para acessar a lista completa de personagens</a>
+        </div>
+    </section>
         <section class="missions" id="missions">
             <div class="container">
                 <h2>Missões</h2>

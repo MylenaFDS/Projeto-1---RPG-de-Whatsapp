@@ -139,7 +139,7 @@ nav li a:hover {
 
 /* Estilos para cada personagem individual */
 .character {
-    border: 1px solid #ddd;
+   
     padding: 10px;
     border-radius: 5px;
     width: calc(25% - 20px); /* Define a largura de cada item */
@@ -148,10 +148,16 @@ nav li a:hover {
 
 .characters img {
     max-width: 100%;
-    height: auto;
+    height: 380px;
     border-radius: 50%;
+    object-fit: cover;
+    margin: auto; /* Adiciona margem automática para centralizar */
+    
 }
 
+.slick-prev, .slick-next {
+    display: none !important;
+}
 
 .see-button,.buy-button,.send-comment,.enter,.create-an-account,.reset-password,.join-button {
     background-color: #194619a2;
