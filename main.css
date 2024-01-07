@@ -541,6 +541,10 @@ nav li a:hover {
     font-weight: bold; /* Peso da fonte */
 }
 
+.guild-item{
+    list-style: none;
+}
+
 .guild-list:hover{
     background-color: #ffd900a2; /* Defina a cor desejada */
     color: #800000; /* Cor do texto (opcional, ajuste de acordo com suas necessidades) */
