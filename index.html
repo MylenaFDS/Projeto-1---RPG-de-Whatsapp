@@ -126,31 +126,49 @@
                 <p>
                     Bem-vindo à nossa Loja! Aqui estão alguns dos produtos que oferecemos para aprimorar suas aventuras nos Reinos de WhatsApp:
                 </p>
-                <ul class="product-list">
-                    <li class="product">
+    
+                <div class="store-carousel">
+                    <div class="product">
                         <img src="./images/Espada Magica.jpeg" alt="Espada Mágica">
                         <h3>Espada Mágica</h3>
                         <p>Uma espada encantada com poderes mágicos.</p>
                         <p>Preço: $100</p>
                         <button class="buy-button">Comprar</button>
-                    </li>
-                    <li class="product">
+                    </div>
+                    <div class="product">
                         <img src="./images/Pocao de Cura.jpg" alt="Poção de Cura">
                         <h3>Poção de Cura</h3>
                         <p>Restaura sua saúde instantaneamente.</p>
                         <p>Preço: $50</p>
                         <button class="buy-button">Comprar</button>
-                    </li>
-                    <li class="product">
+                    </div>
+                    <div class="product">
                         <img src="./images/Varinha Mágica.avif" alt="Varinha Mágica">
                         <h3>Varinha Mágica</h3>
                         <p>Uma varinha que lança feitiços poderosos.</p>
                         <p>Preço: $120</p>
                         <button class="buy-button">Comprar</button>
-                    </li>
-                </ul>
-                <a href="store.html">Clique aqui para acessar a lista completa de produtos</a>
+                    </div>
+                </div>
+    
+                <a href="store.html" class="store-link">Clique aqui para acessar a lista completa de produtos</a>
             </div>
+            <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('.store-carousel').slick({
+                dots: true,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 1,
+                adaptiveHeight: true,
+                autoplay: true,
+                autoplaySpeed: 3000
+            });
+        });
+    </script>
         </section>
         <section class="battles" id="battles">
             <div class="container">

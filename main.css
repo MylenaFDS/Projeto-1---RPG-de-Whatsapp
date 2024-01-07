@@ -61,6 +61,7 @@ section {
 
 section h2{
     margin-bottom: 16px;
+    
 }
 
 section {
@@ -106,6 +107,7 @@ nav ul {
 
 nav li {
     margin: 0;
+    list-style: none;
 }
 
 nav li a {
@@ -120,6 +122,7 @@ nav li a:hover {
     background-color: #ffd900a2; /* Cor de fundo ao passar o mouse */
     color: #800000; /* Cor do texto ao passar o mouse */
 }
+
 
 /* Estilos para a seção Personagens */
 .characters {
@@ -232,8 +235,10 @@ nav li a:hover {
 
 .store img {
     max-width: 100%;
-    height: 50%;
+    height: 380px;
     border-radius: 50%;
+    object-fit: cover;
+    margin: auto; 
 }
 
 .store a {
@@ -243,6 +248,10 @@ nav li a:hover {
     font-weight: bold; /* Peso da fonte */
 }
 
+.store-carousel {
+    width: 80%;
+    margin: auto;
+}
 .guilds a {
     color: #ff00eaa2; /* Cor do link */
     text-decoration: none; /* Remove o sublinhado */
@@ -293,6 +302,16 @@ nav li a:hover {
     color: #800000; /* Cor do texto (opcional, ajuste de acordo com suas necessidades) */
     cursor: pointer;
 }
+
+.missions li{
+    list-style: none;
+}
+
+.battle-items li{
+        list-style: none;
+        padding: 20px;
+    }
+
 
 .store:hover {
     background-color: #ffd900a2; /* Defina a cor desejada */
@@ -365,9 +384,30 @@ nav li a:hover {
     cursor: pointer;
 }
 
+.product {
+    width: 48%;  /* Define a largura de cada item */
+    margin-bottom: 20px;  /* Adiciona margem inferior para espaçamento entre os itens */
+    transition: transform 0.3s; 
+    cursor:pointer
+}
+
+.product:hover {
+    transform: scale(1.05);  /* Aumenta um pouco o tamanho do item ao passar o mouse */
+}
+
+
 .product-list img{
     height: 150px;
 }
+
+.product-items {
+    list-style: none;
+    padding: 0;
+    display: flex;  /* Altera o layout para flexível */
+    flex-wrap: wrap;  /* Permite que os itens quebrem para a próxima linha em telas pequenas */
+    justify-content: space-between;  /* Distribui os itens igualmente na linha */
+}
+
 
 .character-list img{
     
@@ -532,4 +572,8 @@ nav li a:hover {
     text-decoration: none; /* Remove o sublinhado */
     font-family: 'Uncial Antiqua', cursive; /* Fonte */
     font-weight: bold; /* Peso da fonte */
+}
+.product h3:hover {
+    color: #800000; /* Cor desejada ao passar o mouse */
+    cursor: pointer;
 }
