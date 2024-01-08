@@ -359,7 +359,7 @@ nav li a:hover {
     width: 48%;  /* Define a largura de cada item */
     margin-bottom: 20px;  /* Adiciona margem inferior para espaçamento entre os itens */
     transition: transform 0.3s; 
-    cursor:pointer
+    cursor:pointer;
 }
 
 .product:hover {
