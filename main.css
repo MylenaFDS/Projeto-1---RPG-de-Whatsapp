@@ -57,6 +57,7 @@ section .container{
 
 section {
     padding: 24px 0;
+    color: #ffd900a2;
 }
 
 section h2{
@@ -64,15 +65,10 @@ section h2{
     
 }
 
-section {
-    color: #ffd900a2;
-}
-
 
 section p{
     margin-bottom: 8px;
 }
-
 
 
 .background-image {
@@ -173,31 +169,7 @@ nav li a:hover {
     font-family: 'Uncial Antiqua',cursive;
 }
 
-.see-button:hover {
-    background-color: #ff00eaa2;
-}
-
-.buy-button:hover {
-    background-color: #ff00eaa2;
-}
-
-.send-comment:hover {
-    background-color: #ff00eaa2;
-}
-
-.enter:hover {
-    background-color: #ff00eaa2;
-}
-
-.create-an-account:hover {
-    background-color: #ff00eaa2;
-}
-
-.reset-password:hover {
-    background-color: #ff00eaa2;
-}
-
-.join-button:hover {
+.see-button:hover,.buy-button:hover,.send-comment:hover,.enter:hover,.create-an-account:hover,.reset-password:hover,.join-button:hover {
     background-color: #ff00eaa2;
 }
 
@@ -236,6 +208,7 @@ nav li a:hover {
 .store img {
     max-width: 100%;
     height: 380px;
+    padding: 16px;
     border-radius: 50%;
     object-fit: cover;
     margin: auto; 
@@ -291,10 +264,12 @@ nav li a:hover {
     cursor:pointer;
 }
 
-.characters:hover {
-    background-color: #ffd900a2; /* Defina a cor desejada */
-    color: #800000; /* Cor do texto (opcional, ajuste de acordo com suas necessidades) */
-    cursor:pointer;
+.characters p:hover,.characters .character:hover,.store .product:hover,.store p:hover,.characters a:hover,.store a:hover,.product:hover,.product-list a:hover{
+    background-color: #ffd900a2; /* Cor de fundo ao passar o mouse sobre o personagem */
+    color: #800000; /* Cor do texto ao passar o mouse sobre o personagem */
+    cursor: pointer;
+    border-radius: 10px;
+    transform: scale(1.05); 
 }
 
 .missions:hover {
@@ -313,11 +288,7 @@ nav li a:hover {
     }
 
 
-.store:hover {
-    background-color: #ffd900a2; /* Defina a cor desejada */
-    color: #800000; /* Cor do texto (opcional, ajuste de acordo com suas necessidades) */
-    cursor: pointer;
-}
+
 
 .battles:hover {
     background-color: #ffd900a2; /* Defina a cor desejada */
@@ -393,6 +364,7 @@ nav li a:hover {
 
 .product:hover {
     transform: scale(1.05);  /* Aumenta um pouco o tamanho do item ao passar o mouse */
+    padding: 16px;
 }
 
 
