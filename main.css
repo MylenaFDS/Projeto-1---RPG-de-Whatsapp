@@ -125,6 +125,7 @@ nav li a:hover {
     padding: 20px;
     margin-top: 20px;
     border-radius: 10px;
+
 }
 
 /* Estilos para a lista de personagens */
@@ -133,25 +134,28 @@ nav li a:hover {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    
+   
 }
 
 
 /* Estilos para cada personagem individual */
 .character {
    
-    padding: 10px;
-    border-radius: 5px;
+   
+    border-radius: 10px;
     width: calc(25% - 20px); /* Define a largura de cada item */
     text-align: center;
+    
 }
 
 .characters img {
     max-width: 100%;
-    height: 380px;
+    height: 350px;
     border-radius: 50%;
     object-fit: cover;
     margin: auto; /* Adiciona margem automática para centralizar */
+    padding: 16px;
+    
     
 }
 
@@ -187,24 +191,31 @@ nav li a:hover {
     margin: 0;
 }
 
+
 .section li a{
     text-decoration: none;
 }
 
 /* Estilos para o link na seção Missões */
 .missions a {
+    display: block;  /* Transforma o link em um bloco para ocupar a largura total disponível */
+    margin-top: 20px;  /* Adiciona margem acima do link */
+    color: #ff00eaa2; /* Cor do link */
+    text-decoration: none; /* Remove o sublinhado */
+    font-family: 'Uncial Antiqua', cursive; /* Fonte */
+    font-weight: bold; /* Peso da fonte */
+    
+}
+
+.characters a {
+    display: block;  /* Transforma o link em um bloco para ocupar a largura total disponível */
+    margin-top: 20px;  /* Adiciona margem acima do link */
     color: #ff00eaa2; /* Cor do link */
     text-decoration: none; /* Remove o sublinhado */
     font-family: 'Uncial Antiqua', cursive; /* Fonte */
     font-weight: bold; /* Peso da fonte */
 }
 
-.characters a {
-    color: #ff00eaa2; /* Cor do link */
-    text-decoration: none; /* Remove o sublinhado */
-    font-family: 'Uncial Antiqua', cursive; /* Fonte */
-    font-weight: bold; /* Peso da fonte */
-}
 
 .store img {
     max-width: 100%;
@@ -265,13 +276,16 @@ nav li a:hover {
     cursor:pointer;
 }
 
-.characters p:hover,.characters .character:hover,.store .product:hover,.store p:hover,.characters a:hover,.store a:hover,.product:hover,.product-list a:hover{
+.characters p:hover,.characters .character:hover,.store .product:hover,.store p:hover,.characters a:hover,.store a:hover,.product:hover,.product-list a:hover,.guild-item:hover{
     background-color: #ffd900a2; /* Cor de fundo ao passar o mouse sobre o personagem */
     color: #800000; /* Cor do texto ao passar o mouse sobre o personagem */
     cursor: pointer;
-    border-radius: 10px;
+    border-radius: 50px;
     transform: scale(1.05); 
+    padding: 16px;
 }
+
+
 
 .missions:hover {
     background-color: #ffd900a2; /* Defina a cor desejada */
@@ -308,6 +322,7 @@ nav li a:hover {
     color: #800000; /* Cor do texto ao passar o mouse sobre a guilda isolada */
     cursor: pointer;
     border-radius: 10px;
+    padding: 16px;
 }
 
 .comments:hover {
@@ -340,10 +355,11 @@ nav li a:hover {
     cursor: pointer;
 }
 
-.characters:hover a{
+.characters a:hover {
 
     color: #800000; /* Cor do texto (opcional, ajuste de acordo com suas necessidades) */
     cursor: pointer;
+    
 }
 
 .missions:hover a{
@@ -398,7 +414,7 @@ nav li a:hover {
         width: 150px; /* Defina a largura desejada */
         height: 150px; /* Defina a altura desejada */
         /* Adicione outras propriedades CSS, se necessário */
-    
+        
     
 }
 
@@ -454,7 +470,7 @@ nav li a:hover {
 
     width: 500px; /* Defina a largura desejada */
     height: 500px;
-
+    border-radius: 50%;
 }
 
 .character-page a {
@@ -530,9 +546,10 @@ nav li a:hover {
 }
 
 .guild-list:hover{
-    background-color: #ffd900a2; /* Defina a cor desejada */
+    
     color: #800000; /* Cor do texto (opcional, ajuste de acordo com suas necessidades) */
     cursor: pointer;
+    
 }
 
 .guild-list img{
