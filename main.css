@@ -378,6 +378,7 @@ nav li a:hover {
     display: flex;  /* Altera o layout para flexível */
     flex-wrap: wrap;  /* Permite que os itens quebrem para a próxima linha em telas pequenas */
     justify-content: space-between;  /* Distribui os itens igualmente na linha */
+
 }
 
 
@@ -537,8 +538,8 @@ nav li a:hover {
     font-weight: bold; /* Peso da fonte */
 }
 
-.product-list:hover{
-    
+.product-list .product:hover{
+    background-color: #ffd900a2; 
     color: #800000; /* Cor do texto (opcional, ajuste de acordo com suas necessidades) */
     cursor: pointer;
 }
