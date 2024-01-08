@@ -124,6 +124,7 @@ nav li a:hover {
 .characters {
     padding: 20px;
     margin-top: 20px;
+    border-radius: 10px;
 }
 
 /* Estilos para a lista de personagens */
@@ -207,7 +208,7 @@ nav li a:hover {
 
 .store img {
     max-width: 100%;
-    height: 380px;
+    height: 350px;
     padding: 16px;
     border-radius: 50%;
     object-fit: cover;
@@ -302,6 +303,13 @@ nav li a:hover {
     cursor: pointer;
 }
 
+.guild-item:hover {
+    background-color: #ffd900a2; /* Cor de fundo ao passar o mouse sobre a guilda isolada */
+    color: #800000; /* Cor do texto ao passar o mouse sobre a guilda isolada */
+    cursor: pointer;
+    border-radius: 10px;
+}
+
 .comments:hover {
     background-color: #ffd900a2; /* Defina a cor desejada */
     color: #800000; /* Cor do texto (opcional, ajuste de acordo com suas necessidades) */
@@ -381,6 +389,9 @@ nav li a:hover {
 
 }
 
+.product-items img{
+    border-radius: 50%;
+}
 
 .character-list img{
     
